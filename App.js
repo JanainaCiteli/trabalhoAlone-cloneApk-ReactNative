@@ -1,19 +1,36 @@
-import React from 'react';
+import React,{useState} from 'react';
 import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
 import { ImageBackground } from 'react-native';
+import axios from 'axios';
 
 export default function App() {
+  const[loading,setLoading] = useState(true);
+  const[apiData,setApiData] = useState(null);
+  const handleClick = () =>{
+
+    setLoading(true);
+
+    axios({
+      method:'GET',
+      url:'https://api.thecatapi.com/v1/images/search',
+      responseType:'json'
+    }).then(response => {
+      setApiData(response.data[0].url)
+    })
+  };
+
   return (
     <View style={styles.container}>
-      //imagem background
+      
       <ImageBackground
-        source={{ uri: 'https://www.c6bank.com.br/static/e370a163932b1ac3470c6b47d8d31a8f/18e3d/hero-bg-xs.jpg' }}
+        source={apiData ? {uri: apiData} : require('./assets/splash.png')}
         style={styles.backgroundImage}
       />
       <Image
         source={{ uri: 'https://logodownload.org/wp-content/uploads/2020/11/c6-bank-logo-4.png' }}
         style={styles.logo}
         resizeMode="contain"
+        onLoad={handleClick}
       />
       <View style={styles.viewMargin}>
         <TouchableOpacity style={styles.btnContainer1}>
