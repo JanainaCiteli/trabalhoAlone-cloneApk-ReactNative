@@ -1,6 +1,18 @@
-
-https://www.c6bank.com.br/static/e370a163932b1ac3470c6b47d8d31a8f/18e3d/hero-bg-xs.jpg
-https://www.c6bank.com.br/static/c4f52f29e8ff2a34c76f277121bc18f8/e3903/hero-bg-xs.jpg
-https://www.c6bank.com.br/static/86616cf87da032e95b4251e67c52161b/b0b02/hero-bg-xs.jpg
-https://www.c6bank.com.br/static/47367bc56c18bdfb9f06e1198c3c359d/18e3d/hero-bg-xs.jpg
-https://www.c6bank.com.br/static/81fb41cb5a6f006eaf2972dc2798b3aa/18e3d/hero-bg-xs.jpg
+{
+	"imagens":[{
+		"id":1,
+		"url":"https://www.c6bank.com.br/static/e370a163932b1ac3470c6b47d8d31a8f/18e3d/hero-bg-xs.jpg"
+	},{
+		"id":2,
+		"url":"https://www.c6bank.com.br/static/c4f52f29e8ff2a34c76f277121bc18f8/e3903/hero-bg-xs.jpg"
+	},{
+		"id":3,
+		"url":"https://www.c6bank.com.br/static/86616cf87da032e95b4251e67c52161b/b0b02/hero-bg-xs.jpg"
+	},{
+		"id":4,
+		"url":"https://www.c6bank.com.br/static/47367bc56c18bdfb9f06e1198c3c359d/18e3d/hero-bg-xs.jpg"
+	},{
+		"id":5,
+		"url":"https://www.c6bank.com.br/static/81fb41cb5a6f006eaf2972dc2798b3aa/18e3d/hero-bg-xs.jpg"
+	}]
+}
